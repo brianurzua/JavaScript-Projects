@@ -16,8 +16,8 @@ function voteAge() {
 
 //Reserved Keyword Challenge
 	// Challenge No. 1: Assign a variable the value of a reserved word. Attempt to display this in the browser.
-var true = x;
-document.write(true); //This does not display because its a reserved word. 
+// var true = x;
+// document.write(true); //This does not display because its a reserved word. 
 
 //Challenge No. 2: Write an object constructor function.
 	//This is a constructor function for Animal/Pet objects
