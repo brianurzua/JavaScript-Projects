@@ -91,6 +91,6 @@ function conState() {
 		if (x === 2) {continue;}
 		text += 'I am number ' + x + '<br>';
 	}
-	document.getElementById('keepGoing').innerHTML = text;
+	document.getElementById('keepGoing').innerHTML = text; //This loop will skip 2 and contiue until 6
 }
 
