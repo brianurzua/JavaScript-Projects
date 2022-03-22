@@ -15,6 +15,31 @@
 		<li onclick="displaySci(this)" id="Wolf" data-animal-type = "Canis lupus" >Wolf</li>
 	</ul>
 
+	<!-- Arrow function Challenge -->
+
+	<div>
+		<p id="norm"></p>
+		<p id="hawkeye"></p>
+	</div>
+
+	
+	<script type="text/javascript">
+		// This is a normal function
+		var hello;
+		hello = function() {
+		  return "Hello World!";
+		}
+		document.getElementById("norm").innerHTML = hello();
+
+
+		//This is an ARROW FUNCTION
+				// I didn't have to declare var again becuase it is technically a global var.
+		hello = () => {
+		return "Hello World!";
+		}
+		document.getElementById("hawkeye").innerHTML = hello();
+	</script>
+
 
 
 <script type="text/javascript" src="JavaScript/JavaScript_3.js"></script>
