@@ -15,12 +15,14 @@ function placeXorO(squareNumber) {
 		//This condition checks who's turn it is.
 		if (activePlayer === 'x') {
 			//If activePlayer is equal to 'x' the image will be placed there
-			select.style.backgroundImage = 'url(images/x.png)';
+			select.style.backgroundImage = 'url(images/donutX.png)';
+			select.style.backgroundSize = "cover";  // This resizes image to cover the square
 			//active player may only be x or o, if not x then it must be o
 		} 
 		else {
 			//if activePlayer is equal to 'o', the image will be placed
-			select.style.backgroundImage = 'url(images/o.png)';
+			select.style.backgroundImage = 'url(images/donutO.png)';
+			select.style.backgroundSize = "cover";
 		}
 		//squarenumbers and activeplayer are concatenated together and added to array
 		selectedSquares.push(squareNumber + activePlayer);
@@ -38,14 +40,14 @@ function placeXorO(squareNumber) {
 		}
 
 		//audio is for placement sound 
-		audio('media/place.mp3');
+		audio('media/click.mp3');
 
 		//This condition checks to see if it is the computers turn 
 		if(activePlayer === 'o'){
 			//This function disables clicking for computers choice.
 			disableClick();
 			//This function waits 1 second before computer places image and enables click
-			setTimeout(function (){ computersTurn(); }, 1000);
+			setTimeout(function (){ computersTurn(); }, 2000);
 		}
 		//retruning true is needed for our computersturn() function to work
 		return true;
@@ -109,7 +111,7 @@ function checkWinConditions() {
 	and 9 squares are selected the code executes*/	
 	else if (selectedSquares.length >= 9) {
 		// This function plays the tie game sound.
-		audio('media/tie.mp3');
+		audio('media/tiemusic.mp3');
 		// This function sets a .3 second timer before the resetGame is called.
 		setTimeout(function() { resetGame();},1000);
 	}
@@ -214,7 +216,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
 		//This line disallows clicking while the win sound is playin
 		disableClick();
 		//This line plays the win sounds.
-		audio('media/winGame.mp3');
+		audio('media/yeah.mp3');
 		//This line calls our main animation loop.
 		animateLineDrawing();
 		/*This line waits 1 second. Then, clears canvas, resets game, 
