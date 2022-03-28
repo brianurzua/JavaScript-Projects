@@ -28,7 +28,7 @@ function input_decimal(dot) {
 // operators
 function handle_operator(next_operator) {
     const {first_operand, display_value, operator} = calculator;
-    const value_of_input = parseFloat(display_value);  //convert number clicked on into a number
+    const value_of_input = parseFloat(display_value);  //converts number clicked on into a number
     if (operator && calculator.wait_second_operand) {
         calculator.operator = next_operator;
         return;
