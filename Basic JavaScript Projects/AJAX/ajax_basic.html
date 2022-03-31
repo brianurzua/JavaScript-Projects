@@ -19,6 +19,7 @@
 			//Step 2: Prepare the open ajax request
 			ajax.open('GET', 'content.html');
 			//Step 3: define the ajax response callback method
+			/*onreadystatechange=Defines a function to be called when the readyState property changes*/
 			ajax.onreadystatechange = function() {
 				if (ajax.readyState == 4 ){
 					document.getElementById('content').innerHTML = ajax.responseText;
