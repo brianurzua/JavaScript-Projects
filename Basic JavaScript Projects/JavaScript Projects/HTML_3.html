@@ -3,9 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="JavaScript/JavaScript_3.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="HTML_3CSS.css">
 	<title>Data Attribute</title>
 </head>
 <body>
+	<script>
+		document.body.classList.add('fade-out');
+		window.addEventListener('DOMContentLoaded', () => {
+ 			document.body.classList.remove('fade-out');
+		});
+	</script>
+
+
+
 	<h2>Animal Species</h2>
 	<p>Click on each animal to see their scientific name</p>
 	<ul>
@@ -14,6 +25,9 @@
 		<li onclick="displaySci(this)" id="Eagle" data-animal-type = "Haliaeetus leucocephalus" >Bald Eagle</li>
 		<li onclick="displaySci(this)" id="Wolf" data-animal-type = "Canis lupus" >Wolf</li>
 	</ul>
+
+	<h3>This is the Fade Challenge</h3>
+	<p id="dissapear">This tag is supposed to dissapear</p>
 
 	<!-- Arrow function Challenge -->
 
@@ -42,6 +56,6 @@
 
 
 
-<script type="text/javascript" src="JavaScript/JavaScript_3.js"></script>
+
 </body>
 </html>
