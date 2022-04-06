@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="JS Challenge CSS/hyperlink.css">
+
+	<!-- JQuery needs to be defined in script tag, or the code for the slideshow won't work.
+	you will get an error of 'Uncaught ReferenceError: jQuery is not defined' in console-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+	<script type="text/javascript" src="JS Challenge js/hyperlink.js" defer></script>
+	<title>Hyperlink/Smooth transition</title>
+</head>
+<body>
+	<div>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#languages">Languages</a></li>
+				<li><a href="#learn">Learn</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- Code for slideshow Challenge -->
+	<div><h1 style="text-align: center; padding-right: 300px;">This is my automatic slideshow!</h1></div>
+	<div id="slideshow">
+		<div>
+			<img src="JS_challenge_media/Fujinomiya.jpg" width="240" height="240">
+		</div>
+		<div>
+			<img src="JS_challenge_media/Tokyo.jpg" width="240" height="240">
+		</div>
+		<div>
+			Pretty cool eh? This slide is proof the content can be anything.
+		</div>
+	</div>
+	<!-- End of code for slideshow -->
+
+	<!-- Bookmark/smooth scrolling code -->
+	<div id="home">
+		<h2>I am home </h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, ante ac imperdiet molestie, quam diam venenatis massa, posuere varius erat erat quis nisi. Ut tincidunt ac ligula ut tempor. Nunc vel iaculis lorem. Aenean non ullamcorper nisi, ut venenatis tellus. Phasellus sapien ante, pretium egestas sodales ac, accumsan vel urna. Vivamus tristique, orci eget luctus vulputate, neque purus varius velit, a venenatis erat lorem ullamcorper arcu. Praesent et dignissim lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus dolor quam, volutpat a bibendum eu, efficitur a odio. Morbi commodo massa et dolor iaculis posuere.</p>
+	</div>
+
+	<div id="languages">
+		<h2>I am programming languages</h2>
+		<p>Nulla eget ultrices lorem, eget dignissim tortor. Phasellus et dictum nulla. Nullam in vehicula purus. Vestibulum hendrerit tristique mauris, in finibus mi venenatis at. Nulla sit amet eleifend quam, vitae congue arcu. Phasellus eget lacus purus. Pellentesque finibus sed magna eget mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis turpis arcu, tincidunt vel viverra vel, faucibus ac dolor. In hac habitasse platea dictumst. Suspendisse molestie sit amet tellus id pretium. Aenean eu pulvinar enim, in hendrerit enim. Morbi nec ante a orci aliquam feugiat.</p>
+	</div>
+
+	<div id="learn">
+		<h2>I talk about learning languages</h2>
+		<p>Proin sed turpis nec diam vehicula fermentum. Nulla vel enim lacus. Etiam elit velit, eleifend sed eros et, luctus condimentum tortor. Aliquam id lacinia sem. Nulla magna lectus, tempus nec eleifend vel, scelerisque quis dui. Duis faucibus velit pretium mauris aliquam imperdiet. Fusce sagittis faucibus feugiat. Quisque tincidunt urna leo, a ultricies metus maximus id. Sed auctor vehicula eros sit amet tincidunt. In hac habitasse platea dictumst. Cras vestibulum interdum sodales. Quisque sagittis tellus vitae sagittis suscipit. Donec non aliquet eros, non scelerisque enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Donec dignissim quis massa id dignissim.</p>
+	</div>
+
+	<div id="About">
+		<h2>I am the about section</h2>
+		<p>Nunc sit amet nisi in tortor vulputate pellentesque. Ut gravida odio nec massa efficitur tristique. Pellentesque ultricies ultrices enim, gravida rhoncus lectus fringilla eu. Maecenas mi sapien, condimentum tempus massa ut, porta bibendum diam. Integer blandit venenatis lobortis. Proin non velit accumsan, bibendum libero a, congue urna. Cras bibendum libero imperdiet pretium tristique. Aenean faucibus orci nec eros mattis consectetur et id ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas tortor neque, mollis non interdum vehicula, posuere sit amet urna.</p>
+	</div>
+
+	<!-- End Bookmark/smooth scrolling code -->
+
+</body>
+</html>
