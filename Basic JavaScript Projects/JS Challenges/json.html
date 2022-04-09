@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="myCar"></p>
+
+	<script>
+		// JS dictionary object
+		var car = {make: 'Subaru', model: 'Forester', color: 'Black'};
+		// Convert JS Objects to string format
+		var JSONstring = JSON.stringify(car);
+		document.getElementById('myCar').innerHTML = JSONstring;
+	</script>
+
+	<p id="shinobi"></p>
+
+	<script>
+		//JSON string variable
+		var Shika = '{"name": "Shikamaru", "clan": "Nara", "jutsu": "Shadow possesion"}';// use double quotation inside single qoutation or bug happens
+		//Converts JSON strings to JS objects
+		var JsonString = JSON.parse(Shika);
+		document.getElementById('shinobi').innerHTML = JsonString.name + ' of the ' + JsonString.clan + ' clan.';
+	</script>
+
+	<p id="demo"></p>
+
+	<script>
+		//Storing data
+		const myObj = {name: "John", age: 31, city: "New York"};
+		const myJSON = JSON.stringify(myObj);
+		localStorage.setItem("testJSON", myJSON);
+		//Retrieve data
+		let text = localStorage.getItem("testJSON");
+		let obj = JSON.parse(text);
+		document.getElementById("demo").innerHTML = obj.name;
+	</script>
+</body>
+</html>
